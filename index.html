@@ -4,14 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Informational Build-up Framework</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Georgia, serif;
+      font-family: Verdana, sans-serif;
       background-color: #fdfdfd;
       color: #111;
       max-width: 800px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 1rem;
       line-height: 1.6;
     }
 
@@ -21,38 +23,109 @@
     }
 
     header img {
-      height: 60px;
-      margin-bottom: 1rem;
+      margin-top: 0.5em;
+      height: 140px;
+      margin-bottom: 0rem;
+      width: auto;
+      max-width: 100%;
+      filter: grayscale(100%);
     }
+
+    .super-headline {
+      font-family: 'Urbanist', sans-serif;
+      font-size: 8rem;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 0;
+    } 
+
+    .highlight {
+      background-color: rgba(255, 100, 100, 0.15);
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      font-style: italic;
+    }
+
 
     h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.5rem;
+      font-family: 'Urbanist', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
+
     h2 {
+      font-family: 'Urbanist', sans-serif;
       font-size: 1.4rem;
-      margin-top: 2.5rem;
+      margin-top: 2.4rem;
     }
 
     ul {
       padding-left: 1.2rem;
+      margin-left: 2.4rem;
     }
 
-    a.button {
+    ul li::marker {
+      color: #be0004;
+      margin-bottom: 0.75rem;
+    }
+
+   a.button {
       display: inline-block;
       margin-top: 1.5rem;
       padding: 0.75rem 1.25rem;
-      background-color: black;
+      background-color: #be0004;
       color: white;
       text-decoration: none;
       border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.25s ease, transform 0.15s ease;
+    }
+
+    a.button:hover {
+      background-color: #8f0003;
+      transform: scale(1.03);
+    }
+
+    .button-container {
+     text-align: center;
     }
 
     footer {
-      margin-top: 4rem;
-      padding-top: 2rem;
-      border-top: 1px solid #ccc;
+      margin-top: 5rem;
+      padding-top: 0,75rem;
+      padding-bottom: 0.75rem;
+      border-top: 1px solid #ddd;
+      background-color: #fafafa;
+    }
+
+    .newsletter-box {
+      background-color: #fafafa;
+      padding: 3rem 1rem;
+      border-radius: 8px;
+  }
+
+    footer ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    footer ul li {
+      margin-bottom: 0.75rem;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    footer ul li::before {
+      content: "⧉";
+      position: absolute;
+      left: 0;
+      color: #be0004;
+    }
+
+    footer p:last-of-type {
+     font-style: italic;
     }
 
     input[type="email"] {
@@ -65,59 +138,154 @@
     }
 
     input[type="submit"] {
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      background-color: black;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.25s ease;
+  }
+
+  input[type="submit"]:hover {
+     background-color: #be0004;
+    color: white;
+}
+
   </style>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5YFVL5WNWT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5YFVL5WNWT');
+</script>
 <body>
   <header>
     <img src="logo.png" alt="IBF Logo" />
+    <div class="super-headline">IBF</div>
     <h1>The Informational Build-up Framework</h1>
-    <p><strong>Reality as resonance, not matter.</strong></p>
+    <p><strong><span class="highlight"> What if reality is made of information, not matter?</span></strong></p>
+
   </header>
 
   <main>
-    <p>The Informational Build-up Framework (IBF) offers a fresh lens on reality, positioning information—not matter—at its core. Through this perspective, IBF proposes a radically new cosmology: one that is not mechanical but alive, not static but recursive. It envisions a universe inherently directional, where coherence continuously forms, dissolves, and reforms. Here, complexity and consciousness aren't in competition but arise naturally from the same underlying dynamic.</p>
+    <p>The Informational Build-up Framework (IBF) offers a fresh lens on reality, positioning information, not matter, at its core. Through this perspective, IBF proposes a radically new cosmology: one that is alive and not mechanical, and not static, but recursive. IBF envisions a universe inherently directional, where coherence continuously forms, dissolves, and reforms. Here, complexity and consciousness aren't in competition but arise naturally from the same underlying dynamic.</p>
 
     <h2>IBF elegantly reframes:</h2>
     <ul>
-      <li>Consciousness as intrinsic informational resonance.</li>
-      <li>Complexity as recursive coherence-building.</li>
-      <li>Cosmology as dynamic informational evolution.</li>
+     <li>Reality as an informational continuum; cosmology as dynamic informational evolution;</li>
+     <li>Consciousness as something pre-built into this continuum, always guiding things toward coherence;</li>
+     <li>Matter as what happens when bits of this continuum settle into stable form;</li>
+     <li>Time not as a dimension, but the difference between states of this continuum;</li>
+     <li>Evolution, just a process of finding better fits; resonance tuning itself over time;</li>
+     <li>Causality, more like the trail coherence leaves behind than the thing that drives it;</li>
+     <li>Complexity, not built from chaos, but layered through alignment;</li>
+     <li>Intelligence as the ability to ride these layers; sensing, syncing, and shaping what resonates;</li>
+     <li>Humans not as separate observers, but as the continuum becoming aware of itself;</li>
+      <li>And reality, not fixed, not forced, but flowing, assembling itself through preference, pattern, and pull ...</li>
     </ul>
 
     <p>...and many more fundamental concepts.</p>
 
-    <h2>Immediate Possible Applications:</h2>
+    <h2>What Could IBF Make Possible?”</h2>
     <ul>
-      <li>Aligning Artificial Intelligence with human values.</li>
-      <li>Rethinking quantum mechanics through informational coherence.</li>
-      <li>Developing novel models for understanding consciousness and complexity.</li>
+        <li>Build AI that prefers harmony over pure efficiency</li>
+        <li>Understand why quantum mechanics seems to "choose" outcomes</li>
+        <li>Explain consciousness without invoking magic or dismissing experience</li>
+        <li>Offer a mechanics of Divinity</li>
     </ul>
 
-    <a href="whitepaper.pdf" class="button">Download the Whitepaper</a>
-
+    <div class="button-container">
+      <a href="IBF-whitepaper" class="button" download>Download the Whitepaper</a>
+    </div>
+    <br>
+    
     <h2>About the Author</h2>
-    <p>Radu Negulescu is a philosopher, entrepreneur, and technology producer, dedicated to exploring fundamental truths about information, consciousness, and reality. He developed the Informational Build-up Framework to offer new conceptual tools for navigating complexity in science, technology, and society.</p>
+    <p style="font-size: 0.9rem;">Obsessed with the nature of reality and the meaning of information since childhood, <a href='https://www.linkedin.com/in/negulescuradu/' target='_blank' style='text-decoration: none; color: #0077b5; font-weight: bold;'>Radu Negulescu</a> chose the entrepreneurial path over academia, seeing it as the most direct way to test ideas against the world. Over the past two decades, he has built and led ventures across information technology and communications: from building national-scale critical systems and globally acclaimed products, to championing political campaigns & strategic communication projects world-wide. His work bridges technology, communication, and design, all driven by a single pursuit: reducing the entropy of human experience and making life more joyful.
+    </i></p>
 
-    <footer>
-      <h2>Join the Newsletter</h2>
-      <p>Through this new lens, we're exploring bi-weekly deep problems or questions such as:</p>
-      <ul>
-        <li>How does informational resonance shape our understanding of consciousness?</li>
-        <li>Can AI be genuinely aligned with human values through coherence principles?</li>
-        <li>What implications does IBF hold for fundamental physics and cosmology?</li>
-      </ul>
-      <form action="#" method="post">
-        <input type="email" name="email" placeholder="Your email address" required />
-        <input type="submit" value="Subscribe" />
-      </form>
-    </footer>
-  </ma
+    <p style="font-size: 0.9rem;">
+    The Informational Build-up Framework is his most ambitious contribution to date; a unifying model of reality meant to help individuals and societies navigate complexity with more intelligence, coherence, and freedom.</p>
+
+<footer>
+  <div style="max-width: 700px; margin: 0 auto;">
+    <h2 style="text-align: center;">JOIN THE BUILT-UP</h2>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">
+        You've felt it: <b>the growing chaos, the systems that don't work, the sense that something fundamental is broken.</b> What if there's a reason? What if there's a way out? Join thousands exploring how IBF explains what's fragmenting our world and how we can build something coherent together.
+    </p>
+  
+  <br>
+
+    <ul style="list-style-type: none; padding-left: 0; margin: 0 auto 2rem; max-width: 600px; text-align: left;">
+      <li>⧉ Why do our algorithms amplify division instead of understanding?</li>
+      <li>⧉ What if anxiety is just living out of resonance with reality?</li>
+      <li>⧉ Why does modern life feel increasingly meaningless despite material progress?</li>
+      <li>⧉ What would civilization look like if we organized around coherence?</li>
+      <li>⧉ How do we build AI that aligns with human flourishing, not just efficiency?</li>
+    </ul>
+
+  <br>
+
+    <p style="text-align: center; background-color: rgba(255, 100, 100, 0.15); border-radius: 8px; font-style: italic;"><strong>
+    Bi-weekly insights delivered to your inbox. No noise, just signal.</strong>
+    </p>
+
+    <form id="newsletter-form" style="max-width: 400px; margin: 0 auto; text-align: center;">
+  <input type="email" name="email" placeholder="Your email address" required />
+  <input type="submit" value="Subscribe" />
+</form>
+
+<div id="status" style="display: none; max-width: 400px; margin: 1rem auto; text-align: center; background-color: #e6ffed; border: 1px solid #2ecc71; border-radius: 6px; padding: 1rem; font-size: 0.95rem; color: #2d7a49;">
+  ✅ Thanks for subscribing to the Build-up!
+</div>
+
+ <br>
+  </div>
+</footer>
+
+<!-- OUTSIDE FOOTER -->
+<div style="text-align: center; font-size: 0.8rem; margin-top: 2rem; color: #888;">
+  © 2025 Radu Negulescu. All rights reserved.
+</div>
+  </main>
+    <script>
+  document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const email = this.email.value;
+    const timestamp = new Date().toISOString().replace("T", " ").split(".")[0];
+
+    fetch('https://sheetdb.io/api/v1/wlcqmqupx4ggt', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ data: [{ email: email, timestamp: timestamp }] })
+    })
+    .then(res => {
+      if (res.ok) {
+        document.getElementById('newsletter-form').reset();
+        const status = document.getElementById('status');
+        status.innerHTML = "✅ Thanks for subscribing joining Build-up!";
+        status.style.display = 'block';
+
+        // Optional fade-out
+        setTimeout(() => {
+          status.style.display = 'none';
+        }, 10000);
+      } else {
+        alert("Submission failed. Please try again.");
+      }
+    })
+    .catch(err => {
+      console.error("Error:", err);
+      alert("Something went wrong. Please check your connection.");
+    });
+  });
+</script>
+</body>
+</html>
