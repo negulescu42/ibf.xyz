@@ -1,159 +1,210 @@
-<!doctype html>
-<html lang="ro">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Inițiativa Gânditorul</title>
-  <meta name="description" content="Inițiativa Gânditorul – program românesc de cercetare fundamentală în AI." />
-  <style>
-    :root{
-      --text:#111;
-      --muted:#555;
-      --line:#e6e6e6;
-      --accent:#d10000;
-      --bg:#ffffff;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.55;
-    }
-    a{color:inherit}
-    .wrap{max-width:860px;margin:0 auto;padding:56px 18px 72px}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Thinker Initiative</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
-    .kicker{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:12px;color:var(--muted)}
-    h1{font-size:40px;line-height:1.1; margin:10px 0 18px; color:#d21117; text-transform:uppercase; }
-    .p{font-size:18px;margin:0 0 14px;color:var(--text)}
-    .muted{color:var(--muted)}
-    .hr{height:1px;background:var(--line);margin:26px 0}
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    /* Logos */
-    .logos{margin:18px 0 34px;text-align:center}
-    .logos-row{
-      display:flex;
-      justify-content:center;
-      gap:40px;
-      flex-wrap:wrap;
-      margin-top:14px;
-    }
-    .logo-item{max-width:190px}
-    .logo-item img{max-height:48px;width:auto;margin-bottom:8px}
-    .logo-text{font-size:14px;color:var(--muted)}
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 16.5px;
+    line-height: 1.82;
+    color: #1a1a1a;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+  }
 
-    .initiative{
-      margin-top:44px;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-    }
-    .initiative img{max-height:200px;width:auto;margin-bottom:30px}
-    .initiative-text{font-size:16px;font-weight:700;letter-spacing:0.02em}
+  a { color: #1a1a1a; text-decoration: underline; text-decoration-color: #c5c5c5; text-underline-offset: 3px; }
+  a:hover { text-decoration-color: #1a1a1a; }
 
-    /* Fundraising */ 
-    .fund{border:1px solid var(--line);border-radius:14px;padding:18px}
-    .fund h2{margin:0 0 10px;font-size:20px}
-    .buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-    .btn{
-      display:inline-block;
-      padding:10px 12px;
-      border-radius:12px;
-      border:1px solid var(--line);
-      text-decoration:none;
-      font-weight:700;
-      color:var(--text);
-    }
-    .btn.primary{border-color:var(--accent);color:var(--accent)}
-    .btn:hover{background:#fafafa}
-    .btn.primary:hover{background:#fff5f5}
+  .page {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 72px 20px 140px;
+  }
 
-    .footer{margin-top:14px;font-size:14px;color:var(--muted)}
-  </style>
+  .logo {
+    margin-bottom: 56px;
+    text-align: center;
+  }
+  .logo img { height: 68px; }
+
+  h2 {
+    font-family: 'Bitter', serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #c44;
+    margin-top: 56px;
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 4px;
+    color: #333;
+  }
+
+  p { margin-bottom: 13px; }
+
+  .quiet { color: #555; }
+  .meta { color: #aaa; font-size: 12.5px; font-family: 'Bitter', serif; }
+
+  .sep {
+    border: none;
+    border-top: 1px solid #efefef;
+    margin: 56px 0;
+  }
+
+  .highlights {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin: 18px 0 18px;
+  }
+  .h-val {
+    font-family: 'Bitter', serif;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: #1a1a1a;
+  }
+  .h-label {
+    font-family: 'Bitter', serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    line-height: 1.5;
+  }
+
+  .links {
+    display: flex;
+    gap: 18px;
+    font-size: 12.5px;
+    font-family: 'Bitter', serif;
+    margin-top: 2px;
+  }
+  .links a {
+    text-decoration: none;
+    color: #1a0dab;
+    border-bottom: 1px solid #a8b4e0;
+    padding-bottom: 1px;
+  }
+  .links a:visited { color: #681da8; border-color: #c4a8d8; }
+  .links a:hover { color: #1a0dab; border-color: #1a0dab; }
+
+  .entry {
+    margin-bottom: 44px;
+  }
+  .entry:last-child { margin-bottom: 0; }
+
+  .foot {
+    margin-top: 72px;
+    padding-top: 20px;
+    border-top: 1px solid #efefef;
+    font-size: 12.5px;
+    font-family: 'Bitter', serif;
+    color: #aaa;
+    line-height: 1.9;
+  }
+  .foot a { color: #aaa; text-decoration-color: #ddd; }
+  .foot a:hover { color: #1a1a1a; }
+</style>
 </head>
-
 <body>
-  <main class="wrap">
-    <div class="kicker">Asociația IBF · IMAR · ILDS</div>
-    <h1>Inițiativa Gânditorul</h1>
+<div class="page">
 
-    <!-- LOGOS 
-    <section class="logos" aria-label="Logouri parteneri și inițiativă">
-      <div class="logos-row">
-        <div class="logo-item">
-          <img src="logo-ibf.png" alt="Asociația IBF" />
-          <div class="logo-text">Asociația IBF</div>
-        </div>
-        <div class="logo-item">
-          <img src="logo-imar.png" alt="Institutul de Matematică al Academiei Române (IMAR)" />
-          <div class="logo-text">Institutul de Matematică al Academiei Române (IMAR)</div>
-        </div>
-        <div class="logo-item">
-          <img src="logo-ilds.png" alt="Institutul de Logică și Știința Datelor (ILDS)" />
-          <div class="logo-text">Institutul de Logică și Știința Datelor (ILDS)</div>
-        </div>
-      </div> -->
+  <div class="logo">
+    <img src="https://ibf.xyz/logo-ganditorul-vertical.png" alt="The Thinker Initiative">
+  </div>
 
-      <div class="initiative">
-        <img src="logo-ganditorul-vertical.png" alt="Inițiativa Gânditorul" />
+  <p><strong>The Thinker Initiative</strong> is a Romanian program in fundamental artificial intelligence research, uniting experts from the <a href="#">Informational Buildup Foundation</a>, the <a href="https://imar.ro">Simion Stoilow Institute of Mathematics of the Romanian Academy</a>, and the <a href="#">Institute of Logic and Data Science</a>. Researchers across formal logic, algebra, category and institution theory, machine learning, and stochastic processes. Entrepreneurial driven.</p>
+
+  <h2>Objective</h2>
+
+  <p>To research and build AI models that are safer, more reliable, and more efficient than the current paradigm. To build <strong>The Thinker</strong>.</p>
+
+  <h2>Problem</h2>
+
+  <p>Hallucination, catastrophic forgetting, brittle generalization, the persistent inability to make alignment intrinsic. The field treats these as separate problems requiring separate fixes. They are not. They are symptoms of a single pathology: <strong>the substrate</strong>.</p>
+
+  <p>In dominant architectures, knowledge lives as global parameter superposition. The same weights must simultaneously encode new information, preserve old structure, and govern conflicting demands. Update one concept and the entire configuration shifts. Destructive interference is not an accident. It is a mathematical inevitability.</p>
+
+  <p>Scaling postpones the collapse. Regularization softens it. Replay patches the amnesia. None of them cures the underlying physics. The challenge is not how to patch the architecture. It is how to <strong>replace the substrate</strong>.</p>
+
+  <h2>Solution</h2>
+
+  <p>To build the Thinker, we are developing a new computational substrate: the Informational Buildup Framework.</p>
+
+  <p>IBF starts from a single premise: <strong>information is not data</strong>. It is the achievement of structural alignment between a system's internal configuration and the structure of its environment. From this premise, a generative framework is born where memory, agency, and self-correction are not engineered as separate modules but arise as derived consequences of the governing dynamics. Corrections are spatially localized. Knowledge that proves consistent across contexts crystallizes. Knowledge that is contradicted dissolves. What remains is structure that earned its place.</p>
+
+  <hr class="sep">
+
+  <h2>First paper</h2>
+
+  <div class="entry">
+    <h3>Information as Structural Alignment:<br>A Dynamical Theory of Continual Learning</h3>
+    <p class="meta">Radu Negulescu · April 2026</p>
+
+    <p class="quiet" style="margin-top:10px;">Introduces the Informational Buildup Framework and validates its continual learning dynamics across three domains: a controlled non-stationary environment, chess under independent Stockfish evaluation, and Split-CIFAR-100 across 20 sequential tasks. In all three, IBF achieves replay-superior retention without storing raw data.</p>
+
+    <div class="highlights">
+      <div>
+        <div class="h-val">−0.004</div>
+        <div class="h-label">Backward transfer<br>CIFAR-100</div>
       </div>
-    </section>
-
-    <!-- CONTENT -->
-    <p class="p">
-      <b>România poate juca în prima ligă globală</b> a celei mai profunde revoluții tehnologice din istorie: Secolul AI.
-      Inițiativa Gânditorul pornește de la o realitate simplă: nu putem concura cu marile puteri la capital și infrastructură,
-      dar putem deveni relevanți acolo unde contează decisiv, la nivelul <b>modelelor fundamentale de inteligență</b>.
-    </p>
-
-    <p class="p">
-      Inițiativa Gânditorul este un <b>program românesc de cercetare fundamentală</b> în inteligență artificială,
-      construit de Asociația IBF împreună cu parteneri academici. Miza este dezvoltarea unei noi generații de modele AI:
-      <b>mai coerente, mai sigure și mai eficiente</b>, capabile de învățare continuă și de înțelegere structurală a lumii,
-      nu doar de predicție statistică.
-    </p>
-
-    <p class="p">
-      Suntem într-un punct de inflexiune: modelele actuale sunt spectaculoase, dar rămân fragile și opace: halucinații,
-      costuri uriașe, aliniere dificilă. Următoarea paradigmă va fi definită de <b>world models</b>: sisteme care pot construi
-      reprezentări cauzale, verificabile și stabile ale realității.
-    </p>
-
-    <p class="p">
-      În prima etapă, Inițiativa Gânditorul lucrează cu o echipă de cercetare interdisciplinară (logică formală, algebră,
-      teoria categoriilor și instituțiilor, machine learning, procese stocastice) pentru a formaliza fundația și a livra
-      prototipuri demonstrative. Un prim vector strategic este direcția de <b>Real World Models (RWM)</b>, sisteme ancorate
-      ontologic, cauzale și <i>structure-aware by design</i>.
-    </p>
-
-    <p class="p muted">
-      <b>Open research. Open architecture. Open future.</b> Construirea inteligenței care va modela civilizația nu poate rămâne un proces opac.
-      Inițiativa Gânditorul mizează pe cercetare auditată, colaborativă și replicabilă.
-    </p>
-
-    <div class="hr"></div>
-
-    <!-- FUNDRAISING -->
-    <section class="fund" id="fundraising">
-      <h2>Susține Inițiativa</h2>
-      <p class="p muted" style="margin-bottom:0">
-        Dacă vrei să accelerezi cercetarea și să contribui direct la poziționarea României în următoarea paradigmă globală a inteligenței artificiale,
-        poți susține Inițiativa Gânditorul prin sponsorizare. Pentru companii, sponsorizarea se poate realiza din impozitul pe profit, în limita cadrului legal aplicabil.
-      </p>
-
-      <div class="buttons">
-        <!-- Înlocuiește cu fișierele tale reale -->
-        <a class="btn primary"  href="contract-sponsorizare-ganditorul.docx" download>Descarcă contractul (PDF)</a>
-        <a class="btn" href="deck-ganditorul.pdf"  download>Descarcă prezentarea (PDF)</a>
-        <!-- opțional -->
-        <!-- <a class="btn" href="contract-sponsorizare-ganditorul.docx" download>Contract (DOCX)</a> -->
+      <div>
+        <div class="h-val">+38.5 cp</div>
+        <div class="h-label">Backward transfer<br>Chess</div>
       </div>
-
-      <div class="footer">
-        Contact: <b>Radu Negulescu</b> · <a href="mailto:radu@ibf.xyz">radu@ibf.xyz</a>
+      <div>
+        <div class="h-val">43% less</div>
+        <div class="h-label">Forgetting vs<br>replay baseline</div>
       </div>
-    </section>
-  </main>
+    </div>
+
+    <div class="links">
+      <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a>
+      <a href="https://github.com/negulescu42/information-as-alignment">GitHub</a>
+    </div>
+  </div>
+
+  <h2>What comes next</h2>
+
+  <div class="entry">
+    <h3>Learning Dynamics over Frozen LLMs</h3>
+    <p class="quiet">The same IBF engine instantiated on a frozen Mistral-7B. Knowledge injection, retention through continued learning, and selective revision under contradiction, without modifying base model parameters.</p>
+  </div>
+
+  <div class="entry">
+    <h3>Boundary-Free Continual Streams</h3>
+    <p class="quiet">Removing explicit context transitions. Memories crystallize, fall silent, reactivate, and dissolve under rolling discrepancy statistics alone.</p>
+  </div>
+
+  <div class="entry">
+    <h3>Multi-Agent Interaction</h3>
+    <p class="quiet">Multiple IBF agents in a shared world where each agent's discrepancy structure is partly generated by the others. Testing whether coordination emerges without an externally imposed objective.</p>
+  </div>
+
+  <div class="entry">
+    <h3>The Full Foundational Treatment</h3>
+    <p class="quiet">The complete axiomatic, postulatory, and proof-level structure. The first paper states only the minimal formal machinery needed for the continual learning arc. The full theory is substantially larger.</p>
+  </div>
+
+  <div class="foot">
+    <p><strong style="color:#666">Radu Negulescu</strong> · <a href="mailto:radu@ibf.xyz">radu@ibf.xyz</a></p>
+    <p><a href="https://ibf.xyz/deck-ganditorul.pdf">Deck</a> · <a href="https://ibf.xyz/contract-sponsorizare-ganditorul.docx">Contract sponsorizare</a> (deductibil din impozitul pe profit)</p>
+  </div>
+
+</div>
 </body>
 </html>
